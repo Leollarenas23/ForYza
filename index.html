@@ -21,7 +21,7 @@
 #lyrics {
     font-size: 16px;
     line-height: 1.5;
-    background: url(/Messenger_creation_9C25401E-9961-4C15-B4D0-A2D11F544A70_1.jpeg) no-repeat center;
+    background: url(Messenger_creation_9C25401E-9961-4C15-B4D0-A2D11F544A70_1.jpeg) no-repeat center;
     background-attachment: fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
@@ -40,6 +40,25 @@ button {
     border-radius: 5px;
 }
 
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #lyrics {
+        font-size: 12px;
+        line-height: 1.2;
+        max-width: 95%;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #lyrics {
+        font-size: 10px;
+        line-height: 1;
+    }
 
     button {
         padding: 10px 20px;
@@ -173,7 +192,7 @@ Will you be forever with me?
 
 <script>
   // Create audio object
-  let bgMusic = new Audio("/blue_leo.mp3");
+  let bgMusic = new Audio("blue_leo.mp3");
   bgMusic.loop = true;
   
   let progressBar = document.getElementById("progressBar");
