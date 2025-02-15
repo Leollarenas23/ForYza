@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Page</title>
+    <style>
+        body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #262626;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+#lyrics {
+    font-size: 16px;
+    line-height: 1.5;
+    background: url(/Messenger_creation_9C25401E-9961-4C15-B4D0-A2D11F544A70_1.jpeg) no-repeat center;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    max-width: 90%;
+    overflow-wrap: break-word;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #lyrics {
+        font-size: 12px;
+        line-height: 1.2;
+        max-width: 95%;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #lyrics {
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+        #note {
+          text-align: center;
+          color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="lyrics">
+        Your morning eyes, I could stare like watching stars
+I could walk you by, and I'll tell without a thought
+You'd be mine, would you mind if I took your hand tonight?
+Know you're all that I want this life
+I'll imagine we fell in love
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The ocean's colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me?
+My love will always stay by you
+I'll keep it safe, so don't you worry a thing, I'll tell you I love you more
+It's stuck with you forever, so promise you won't let it go
+I'll trust the universe will always bring me to you
+I'll imagine we fell in love
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The ocean's colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me?Your morning eyes, I could stare like watching stars
+I could walk you by, and I'll tell without a thought
+You'd be mine, would you mind if I took your hand tonight?
+Know you're all that I want this life
+I'll imagine we fell in love
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The ocean's colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me?
+My love will always stay by you
+I'll keep it safe, so don't you worry a thing, I'll tell you I love you more
+It's stuck with you forever, so promise you won't let it go
+I'll trust the universe will always bring me to you
+I'll imagine we fell in love
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The ocean's colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me?Your morning eyes, I could stare like watching stars
+I could walk you by, and I'll tell without a thought
+You'd be mine, would you mind if I took your hand tonight?
+Know you're all that I want this life
+I'll imagine we fell in love
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The ocean's colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me?
+My love will always stay by you
+I'll keep it safe, so don't you worry a thing, I'll tell you I love you more
+It's stuck with you forever, so promise you won't let it go
+I'll trust the universe will always bring me to you
+I'll imagine we fell in love
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The ocean's colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me?Your morning eyes, I could stare like watching stars
+I could walk you by, and I'll tell without a thought
+You'd be mine, would you mind if I took your hand tonight?
+Know you're all that I want this life
+I'll imagine we fell in love
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The ocean's colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me?
+My love will always stay by you
+I'll keep it safe, so don't you worry a thing, I'll tell you I love you more
+It's stuck with you forever, so promise you won't let it go
+I'll trust the universe will always bring me to you
+I'll imagine we fell in love
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The ocean's colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me?Your morning eyes, I could stare like watching stars
+I could walk you by, and I'll tell without a thought
+You'd be mine, would you mind if I took your hand tonight?
+Know you're all that I want this life
+I'll imagine we fell in love
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The ocean's colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me?
+My love will always stay by you
+I'll keep it safe, so don't you worry a thing, I'll tell you I love you more
+It's stuck with you forever, so promise you won't let it go
+I'll trust the universe will always bring me to you
+I'll imagine we fell in love
+I'll nap under moonlight skies with you
+I think I'll picture us, you with the waves
+The ocean's colors on your face
+I'll leave my heart with your air
+So let me fly with you
+Will you be forever with me?
+    </p>
+    <p id="note">
+      Wear earphones for better experience. <br>
+      (Note: You may zoom in the image to view lyrics)
+    </p>
+    <!-- Music Controls -->
+   <button onclick="toggleMusic()">Play/Pause Music</button>
+<input type="range" id="progressBar" value="0" max="100" step="1" oninput="seekMusic(this.value)">
+
+<script>
+  // Create audio object
+  let bgMusic = new Audio("/blue_leo.mp3");
+  bgMusic.loop = true;
+  
+  let progressBar = document.getElementById("progressBar");
+  
+  function toggleMusic() {
+    if (bgMusic.paused) {
+      bgMusic.play();
+    } else {
+      bgMusic.pause();
+    }
+  }
+  
+  // Update progress bar as music plays
+  bgMusic.addEventListener("timeupdate", function() {
+    let progress = (bgMusic.currentTime / bgMusic.duration) * 100;
+    progressBar.value = progress;
+  });
+  
+  // Seek music when progress bar is moved
+  function seekMusic(value) {
+    bgMusic.currentTime = (value / 100) * bgMusic.duration;
+  }
+</script>
+
+</body>
+
+</html>
